@@ -1,0 +1,114 @@
+.Emi {
+    font-family: "Roboto", sans-serif;
+    width: 600px;
+    margin: 15px auto;
+    color: #f8071bef;
+    overflow: hidden;
+  }
+  
+.Emi-calculator {
+    font-family: "Roboto", sans-serif;
+    width: 600px;
+    margin: 24px auto;
+    background: rgb(4, 247, 227);
+    box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: #100303;
+    overflow: hidden;
+  }
+  
+  .Emi-calculator,
+  .Emi-calculator * {
+    box-sizing: border-box;
+  }
+  
+  .Emi-calculator .top {
+    background: #f00404;
+    color: #fff;
+    padding: 32px;
+  }
+  
+  .Emi-calculator .top h2 {
+    margin-top: 0;
+  }
+  
+  .Emi-calculator form {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  
+  .Emi-calculator .title {
+    margin-bottom: 16px;
+  }
+  
+  .Emi-calculator form input {
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+  
+  .Emi-calculator .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Emi-calculator .result .left {
+    width: 100%;
+    padding: 8px 32px;
+  }
+  
+  .Emi-calculator .left h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  
+  .Emi-calculator .result .value {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+  }
+  
+  .Emi-calculator .result .value::before {
+    content: "₹";
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+  }
+  
+  .Emi-calculator .calculate-btn {
+    background: #02010f;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+  }
+  
+  .Emi-calculator .right {
+    width: 50%;
+  }
+  
+  @media (max-width: 650px) {
+    .Emi-calculator {
+      width: 90%;
+      max-width: 500px;
+    }
+  
+    .Emi-calculator form {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .Emi-calculator .result {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

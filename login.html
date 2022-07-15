@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>EMI calculator</title>
+
+    </head>
+    <link rel="stylesheet" href="reg.css">
+    
+    <body>
+        <div class="cont">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                      
+                        <h2>Login</h2>
+                        <form>
+                            <input type="email" class="input-box" placeholder="your Email Id" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <a href="file:///D:/Emi/html/index.html" target="_self">
+                            <button type="submit"  class="button" >Submit</button></a>
+                            </a>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        
+                        <button type="button" class="btn" onclick="openRegistration()">New Registration</button>
+                    </div>
+                    
+                        <div class="card-back">
+                            <h2>Registration</h2>
+                        <form>
+                            <input type="text" class="input-box" placeholder="Your Name" required>
+                            <input type="email" class="input-box" placeholder="Your Email Id" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <button type="submit" class="submit-btn2">Submit</button>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">I have a Account</button>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            <script>
+                var card=document.getElementById("card");
+                function openRegistration(){
+                    card.style.transform="rotateY(-180deg)";
+
+                }
+                function openLogin(){
+                    card.style.transform="rotateY(0deg)";
+                }
+            </script>
+            <script>
+                window.location=$(".button").data("location");
+            </script>
+
+
+
+    </body>
+</html>
